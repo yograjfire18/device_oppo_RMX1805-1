@@ -18,9 +18,9 @@
 set -e
 
 # Required!
-export DEVICE=sakura
+export DEVICE=RMX1805
 export DEVICE_COMMON=msm8953-common
-export VENDOR=xiaomi
+export VENDOR=oppo
 
 export DEVICE_BRINGUP_YEAR=2019
 

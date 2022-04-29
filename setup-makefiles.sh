@@ -19,9 +19,9 @@
 set -e
 
 # Required!
-export DEVICE=sakura
+export DEVICE=RMX1805
 export DEVICE_COMMON=msm8953-common
-export VENDOR=xiaomi
+export VENDOR=oppo
 
 INITIAL_COPYRIGHT_YEAR=2017
 
@@ -42,7 +42,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "mido tissot"
+write_headers "mido tissot RMX1805"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files-qc.txt true

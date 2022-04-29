@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
-$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
+$(call inherit-product, vendor/oppo/sakura/sakura-vendor.mk)
+$(call inherit-product, vendor/oppo/msm8953-common/msm8953-common-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Enable updating of APEXes
@@ -36,8 +36,8 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1520
+TARGET_SCREEN_WIDTH := 720
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -81,10 +81,6 @@ PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
-
-# Device-specific Settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -336,9 +332,10 @@ PRODUCT_COPY_FILES += \
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@1.0.vendor \
-    vendor.qti.hardware.perf@2.0.vendor 
+    vendor.qti.hardware.perf@2.0.vendor
+
 # Properties
--include device/xiaomi/sakura/prop.mk
+-include device/oppo/RMX1805/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -356,7 +353,7 @@ PRODUCT_PACKAGES += \
     init.goodix.sh \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc \
-    init.sakura.rc
+    init.RMX1805.rc
 
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
@@ -423,7 +420,7 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/sakura
+    device/oppo/RMX1805
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
